@@ -1,0 +1,8 @@
+Pada praktikum di week 1 ini kami melakukan praktikum dari mulai penginstalan software dan integrasi dari masing" software berupa Integrasi antar aplikasi VsCode dan Github
+Hal pertama yang saya lakukan adalah Membuat akun github dan membuat repository. 
+Setelah itu clone repository ke komputer. Pada saat clone saya mendapatkan problem saat melakukan clone di app VsCode di terminal muncul "git: The term 'git' is not recognized as the name of a cimdlet, function, script file, or operableprogram.Check the spelling of the name, or if a path was included, verify that the path is correct and try again. 
+Pada saat problem tersebut, perlu dilakukannya download app di Git. Setelah mengunduh dan menginstal aplikasi tersebut, munculnya warning: You appear to have cloned an empty repository. Setelah itu, perlunya mengubah properties pada bagian file. Setelah itu bisa untuk di kloning.
+Setelah itu, mengunduh aplikasi Github dan registrasi lalu diintegrasikan ke aplikasi VsCode. Setelah itu download dataset di kaggle dan download pyhton serta openCV di VsCode Terminal. 
+Deteksi Objek Sederhana dengan OpenCV, dilakukannya coding dengan deteksi objek berwarna merah dengan difilter metode HSV dan berbasis face detection. 
+Untuk hasil laporan sementara ini, perlunya ada tambahan setelah menulis laporan sementara ini berupa :
+Tingkat keakurasian ,ditambahkannya fitur bounding box serta modifikasi kode program , dan juga eksplorasi dataset kaggle lainnya. 
