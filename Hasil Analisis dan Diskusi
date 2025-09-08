@@ -1,0 +1,19 @@
+•	Analisis 
+1.	Apa yang terjadi saat objek berwarna merah muncul di kamera?
+Sistem akan mengenali objek tersebut yang dalam rentang warna merah, yang mana pada frame asli, objek merah terlihat normal. Pada mask, objek merahnya akan muncul warna putih, sementara bagian yang lainnya menjadi hitam, dan result hanya objek merah nya yang terlihat, sedangkan area lain nya dihitamkan. 
+2.	Bagaimana sistem mendeteksi dan memfilter warna merah?
+Sistem melakukan proses deteksi melalui langkah-langkah berikut:
+-	Gambar dari kamera diubah dari format BGR ke HSV.
+-	Selanjutnya menententukan nilai batas bawah (lower_red) dan batas atas (upper_red) untuk warna merah dalam format HSV.
+-	Fungsi cv2.inRange() menghasilkan citra biner, di mana piksel merah menjadi putih (1) dan selain merah menjadi hitam (0).
+-	Selanjutnya fungsi dengan cv2.bitwise_and(), hanya bagian gambar yang berwarna merah yang ditampilkan, sedangkan area lain dihapus.
+3.	Bagaimana metode ini dapat diterapkan dalam intelligent control systems?
+Metode ini dapat diterapkan dalam sistem kontrol cerdas seperti pada sistem pengawasan, robotika, dan kendaraan otonom.
+
+
+•	Diskusi
+1.	Bagaimana AI dapat meningkatkan sistem kontrol berbasis Computer Vision?
+Dengan meningkatkan di sisi pengenalan objek yang lebih kompleks misalnya dengan deep learning atau Convulutional Neural Network yang bisa membedakan bentuk, pola, ataupun kondisi pencahayaan yang bervariasi. Jadi sistem kontrol tersebut dapat membuat keputusannya secara otomatis dan lebih baik berdasarkan hasil deteksi visualnya. 
+2.	Apa kelebihan dan kekurangan metode deteksi objek berbasis warna?
+Kelebihannya adalah mudah diimplementasikan, ringan secara komputasinya jadi tidak membutuhkan perangkat yang berat atau berspesifikasi tinggi sekali, dan efektif secara real time (dalam kondisi cahaya nya stabil).
+Sedangkan kekurangannya adalah sensitif terhadap perubahan pencahayaan jadi warna nya bisa terlihat berbeda kalau dalam cahaya tertentu, dan sulit membedakan warna yang mirip (misalnya warna merah dan orange).
